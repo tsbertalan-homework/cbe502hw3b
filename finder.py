@@ -21,6 +21,10 @@ def findzero(func,(minx,maxx),precision=10000,verbose=False):
         oldsign = cursign
     roots = list(set(roots))
     roots.sort()
+    newroots=[]
+    #for root in roots:
+        #newroots.append(np.round(root,decimals=2))
+    #print list(set(newroots))
     if verbose:
         print "returning roots=", roots
     return(roots)
